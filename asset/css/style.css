@@ -1,0 +1,35 @@
+body {
+	background: url('../img/back.jpg');
+}
+
+.container {
+	padding-top: 5%;
+}
+
+.panel-heading {
+	background-color: #ff2800;
+	text-align: center;
+	height: 50px;
+}
+
+.panel-me {
+	border-color: #ff2800;
+}
+
+.panel-me h3 {
+	font-size: 2.3em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.btn-me {
+	background-color: #fff;
+	color: #0f0f0f;
+	border-color: #ff2800;
+	text-transform: uppercase;
+}
+
+.btn-me:hover {
+	background-color: #ff2800;
+	color: #fff;
+}

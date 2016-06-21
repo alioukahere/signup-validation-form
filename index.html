@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interactive Form</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-sm-4 col-sm-offset-4">
+				<div class="panel panel-me">
+					<div class="panel-heading">
+						<h3 class="panel-title">Signin</h3>
+					</div>
+					<div class="panel-body">
+						<form action="#" method="post" id="myForm" class="myForm">
+							<span class="small text-danger tooltip" id="error"> * Error !!! There is an error in your input.</span>
+							<span class="small text-success tooltip" id="success"> + The data has been sent.</span>
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Name" class="form-control" id="name">
+								<span class="small text-danger tooltip" id="nameTooltip"> * The name should contains at least 2 characters</span>
+							</div>
+							<div class="form-group">
+								<input type="text" name="pseudo" placeholder="Pseudo" class="form-control" id="pseudo">
+								<span class="small text-danger tooltip" id="pseudoTooltip"> * The pseudo should contains at least 4 characters</span>
+							</div>
+							<div class="form-group">
+								<input type="text" name="age" placeholder="Age" class="form-control" id="age">
+								<span class="small text-danger tooltip" id="ageTooltip"> * The age can't contains a character and between 10 - 100</span>
+							</div>
+							<div class="form-group">
+								<input type="radio" name="sex" value="M"> Male
+								<input type="radio" name="sex" value="F"> Female<br>
+								<span class="small text-danger tooltip" id="sexTooltip"> * You must select your sex</span>
+							</div>
+							<div class="form-group">
+								<input type="text" name="email" placeholder="Email" class="form-control" id="email">
+								<span class="small text-danger tooltip" id="emailTooltip"> * The email can't contains a character</span>
+							</div>
+							<div class="form-group">
+								<input type="password" name="pass" placeholder="Password" class="form-control" id="password">
+								<span class="small text-danger tooltip" id="passwordTooltip"> * The password should contains at least 8 characters</span>
+							</div>
+							<div class="form-group">
+								<input type="password" name="confirmPass" placeholder="Confirm Password" class="form-control" id="confirmPass">
+								<span class="small text-danger tooltip" id="confirmPassTooltip"> * This password is not conform to the first</span>
+								<span class="small text-success tooltip"> + Conform password</span>
+							</div>
+							<input type="submit" name="" value="Signin" class="btn btn-lg pull-right btn-me">
+						</form>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="asset/js/kahere.js"></script>
+	</body>
+</html>
