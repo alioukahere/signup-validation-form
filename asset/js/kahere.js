@@ -176,9 +176,10 @@
 			parentClass = email.parentNode.className,
 			parentClassTab = parentClass.split(" "),
 			tooltipClass = tooltip.className,
-			tooltipClassTab = tooltipClass.split(" ");
+			tooltipClassTab = tooltipClass.split(" "),
+			testMail = /^[a-z]+[a-z0-9._-]*@[a-z0-9._-]{2,}\.[a-z]{2,}$/;
 
-		if(email.value.length >= 4) {
+		if(testMail.test(email.value)) {
 			if(typeof(parentClassTab[1]) === 'undefined')
 				parentClassTab[1] = ' has-success';
 			else {
@@ -321,6 +322,8 @@
 				strClassTab[2] = '';
 				str.className = strClassTab.join(' ');
 			}
+
+			return false;
 		};
 	})();
 

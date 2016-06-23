@@ -36,11 +36,13 @@
 							</div>
 							<div class="form-group">
 								<input type="text" name="email" placeholder="Email" class="form-control" id="email">
-								<span class="small text-danger tooltip" id="emailTooltip"> * The email can't contains a character</span>
+								<span class="small text-danger tooltip" id="emailTooltip"> * The email isn't valid</span>
 							</div>
 							<div class="form-group">
 								<input type="password" name="pass" placeholder="Password" class="form-control" id="password">
 								<span class="small text-danger tooltip" id="passwordTooltip"> * The password should contains at least 8 characters</span>
+								<span class="text-success tooltip" name="passQuality">Strong Password</span>
+								<span class="text-danger tooltip" name="passQuality">Low Password</span>
 							</div>
 							<div class="form-group">
 								<input type="password" name="confirmPass" placeholder="Confirm Password" class="form-control" id="confirmPass">
